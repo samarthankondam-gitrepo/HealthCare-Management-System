@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+/* hide announcement / banner */
+.announcement, .top-banner, .alert-banner, .site-announcement {
+  display: none !important;
+}

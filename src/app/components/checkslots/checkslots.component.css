@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.panel-body {
+  margin-left: 1%;
+  margin-right: 2%;
+}
+
+thead {
+  background-color: rgb(200, 220, 200); /* lighter header background for contrast */
+}
+
+table, td {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+table, td, tr {
+  border: 1px solid rgb(163, 161, 161);
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: large;
+}
+
+/* ✅ Changed color from white → black */
+th {
+  text-transform: uppercase;
+  color: black; /* was white earlier */
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  font-size: normal;
+}
+
+td {
+  text-transform: none;
+}
+
+.accepted {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(30, 116, 30);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.pending {
+  border-radius: 10px;
+  background-color: rgb(196, 137, 28);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.datecover {
+  border-radius: 10px;
+  background-color: rgb(10, 15, 68);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.noslot {
+  border-radius: 10px;
+  background-color: rgb(128, 26, 26);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+/* ✅ Table visibility & alternating colors */
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #e0f7fa;
+  transition: background-color 0.3s ease;
+}
+
+td {
+  color: #222;
+  background-color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+/* -------- Fix for Table Headers Visibility -------- */
+
+th {
+  background-color: #063970;     /* deep blue header */
+  color: #ffffff !important;     /* white text for contrast */
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #ccc;
+}
+
+/* Optional — make slot cells look neat */
+td span {
+  background-color: #b57f1b; /* gold shade for slot buttons */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
